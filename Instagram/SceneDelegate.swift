@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // check if the user is logged in
         if PFUser.current() != nil {
             let main = UIStoryboard(name:"Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationColtroller")
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
             // stop and restart would show the feed controller instead of
             // login screen
             window?.rootViewController = feedNavigationController
